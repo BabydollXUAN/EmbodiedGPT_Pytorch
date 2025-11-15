@@ -10,6 +10,7 @@ python -m venv .venv && source .venv/bin/activate
 python -m pip install -U pip
 pip install --extra-index-url https://download.pytorch.org/whl/cu121 -r requirements.lock.txt
 
+执行tools，需要在bash中输入：chmod +x tools/*.sh
 
 ## Data Preparation
 
