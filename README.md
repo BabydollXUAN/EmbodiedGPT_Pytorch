@@ -6,6 +6,11 @@ We will update the instructions for this codebase as soon as possible.
 
 See [INSTALLATION.md](https://github.com/EmbodiedGPT/EmbodiedGPT_Pytorch/blob/main/INSTALLATION.md)
 
+python -m venv .venv && source .venv/bin/activate
+python -m pip install -U pip
+pip install --extra-index-url https://download.pytorch.org/whl/cu121 -r requirements.lock.txt
+
+
 ## Data Preparation
 
 1. Download the [EgoCOT dataset](https://github.com/EmbodiedGPT/EgoCOT_Dataset).
