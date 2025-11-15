@@ -1,0 +1,22 @@
+# —— CUDA 12.1 对齐（AutoDL 4090 机器常见镜像）——
+torch==2.1.2+cu121           ; extra_index_url = https://download.pytorch.org/whl/cu121
+torchvision==0.16.2+cu121    ; extra_index_url = https://download.pytorch.org/whl/cu121
+torchaudio==2.1.2+cu121      ; extra_index_url = https://download.pytorch.org/whl/cu121
+
+# —— 核心冲突解决 —— 
+numpy<2
+transformers==4.34.1
+tokenizers>=0.14.1,<0.16
+
+# —— 项目常用依赖 —— 
+safetensors>=0.4.0
+huggingface-hub>=0.24.0
+accelerate>=0.31.0
+timm==0.9.16
+einops>=0.7.0
+opencv-python-headless==4.10.0.84
+decord==0.6.0
+Pillow>=10.0
+tqdm>=4.66
+pyyaml>=6.0
+scipy>=1.10
