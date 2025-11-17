@@ -1,3 +1,20 @@
+## Quickstart (AutoDL, CUDA 12.1)
+
+```bash
+# 1) clone & venv
+git clone https://github.com/<your-id>/EmbodiedGPT_Pytorch.git
+cd EmbodiedGPT_Pytorch
+python -m venv .venv && source .venv/bin/activate
+python -m pip install -U pip
+pip install --extra-index-url https://download.pytorch.org/whl/cu121 -r requirements.lock.txt
+
+# 2) (可选) 下载数据/权重
+# tools/download_egocot_rclone.sh
+# tools/download_tiny_ckpt_hf.sh
+
+# 3) 最小验证
+./run_min.sh
+
 # Embodied Family Code Base
 
 We will update the instructions for this codebase as soon as possible.
