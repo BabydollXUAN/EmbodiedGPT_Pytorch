@@ -11,7 +11,7 @@ python -m pip install -U pip
 pip install --extra-index-url https://download.pytorch.org/whl/cu121 -r requirements.lock.txt
 
 执行tools，需要在bash中输入：chmod +x tools/*.sh
-
+一键运行脚本（GPU 有就走 FP16，没有也能先干跑）：chmod +x run_min.sh
 ## Data Preparation
 
 1. Download the [EgoCOT dataset](https://github.com/EmbodiedGPT/EgoCOT_Dataset).
