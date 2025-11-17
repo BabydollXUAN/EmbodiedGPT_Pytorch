@@ -1,0 +1,10 @@
+# venv
+.venv/
+# checkpoints & datasets
+checkpoints/
+datasets/
+# caches
+__pycache__/
+*.pyc
+# OS
+.DS_Store
