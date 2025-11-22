@@ -8,3 +8,13 @@ __pycache__/
 *.pyc
 # OS
 .DS_Store
+# data / caches / checkpoints (DON'T PUSH)
+datasets/
+checkpoints/
+.hf_home/
+*.7z
+*.zip
+
+# python cache
+__pycache__/
+*.pyc
