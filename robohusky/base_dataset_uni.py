@@ -16,7 +16,11 @@ from torch.utils.data import (
 import torchvision.transforms as T
 from torchvision.transforms.functional import InterpolationMode
 
-from robohusky.train.tcsloader import TCSLoader
+try:
+    from robohusky.train.tcsloader import TCSLoader  # optional for training
+except Exception:
+    class TCSLoader:
+        pass
 
 from decord import VideoReader, cpu
 from robohusky.video_transformers import (
